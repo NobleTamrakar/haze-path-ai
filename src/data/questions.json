@@ -1,0 +1,50 @@
+[
+  {
+    "id": "phy-mech-1",
+    "topicId": "physics-mechanics",
+    "question": "A ball is thrown vertically upward with a velocity of 20 m/s. What is the maximum height reached?",
+    "options": ["10 m", "15 m", "20 m", "25 m"],
+    "answer": 2,
+    "explanation": "Using v² = u² + 2as, where final velocity v = 0, initial velocity u = 20 m/s, acceleration a = -9.8 m/s². Height = u²/2g = 400/19.6 ≈ 20 m"
+  },
+  {
+    "id": "phy-mech-2", 
+    "topicId": "physics-mechanics",
+    "question": "Newton's first law is also known as:",
+    "options": ["Law of inertia", "Law of acceleration", "Law of action-reaction", "Law of gravitation"],
+    "answer": 0,
+    "explanation": "Newton's first law states that an object at rest stays at rest and an object in motion stays in motion unless acted upon by an external force. This is the law of inertia."
+  },
+  {
+    "id": "chem-org-1",
+    "topicId": "chemistry-organic", 
+    "question": "Which of the following is an alkene?",
+    "options": ["C₂H₆", "C₂H₄", "C₂H₂", "CH₄"],
+    "answer": 1,
+    "explanation": "Alkenes have the general formula CₙH₂ₙ. C₂H₄ (ethene) has a C=C double bond, making it an alkene."
+  },
+  {
+    "id": "bio-cell-1",
+    "topicId": "biology-cell",
+    "question": "Which organelle is responsible for protein synthesis?",
+    "options": ["Mitochondria", "Nucleus", "Ribosomes", "Golgi apparatus"],
+    "answer": 2,
+    "explanation": "Ribosomes are the cellular organelles responsible for protein synthesis. They translate mRNA into polypeptide chains."
+  },
+  {
+    "id": "phy-thermo-1",
+    "topicId": "physics-thermodynamics",
+    "question": "The first law of thermodynamics is based on:",
+    "options": ["Conservation of energy", "Conservation of momentum", "Conservation of mass", "Conservation of charge"],
+    "answer": 0,
+    "explanation": "The first law of thermodynamics states that energy cannot be created or destroyed, only converted from one form to another - this is conservation of energy."
+  },
+  {
+    "id": "bio-gen-1",
+    "topicId": "biology-genetics",
+    "question": "What is the complementary base pair for Adenine in DNA?",
+    "options": ["Guanine", "Cytosine", "Thymine", "Uracil"],
+    "answer": 2,
+    "explanation": "In DNA, Adenine (A) pairs with Thymine (T) through hydrogen bonding. Guanine pairs with Cytosine."
+  }
+]

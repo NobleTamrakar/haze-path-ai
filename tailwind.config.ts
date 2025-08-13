@@ -52,6 +52,27 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
+				blueHaze: {
+					50: 'hsl(var(--blue-haze-50))',
+					100: 'hsl(var(--blue-haze-100))',
+					200: 'hsl(var(--blue-haze-200))',
+					300: 'hsl(var(--blue-haze-300))',
+					400: 'hsl(var(--blue-haze-400))',
+					500: 'hsl(var(--blue-haze-500))',
+					600: 'hsl(var(--blue-haze-600))',
+					700: 'hsl(var(--blue-haze-700))',
+					800: 'hsl(var(--blue-haze-800))',
+					900: 'hsl(var(--blue-haze-900))',
+					950: 'hsl(var(--blue-haze-950))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

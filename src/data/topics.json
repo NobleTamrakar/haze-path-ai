@@ -1,0 +1,58 @@
+[
+  {
+    "id": "physics-mechanics",
+    "name": "Mechanics",
+    "subject": "Physics",
+    "difficulty": "medium",
+    "units": ["Kinematics", "Laws of Motion", "Work Energy Power", "Rotational Motion"],
+    "videoId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": "physics-thermodynamics",
+    "name": "Thermodynamics", 
+    "subject": "Physics",
+    "difficulty": "hard",
+    "units": ["Heat Transfer", "Laws of Thermodynamics", "Kinetic Theory"],
+    "videoId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": "chemistry-organic",
+    "name": "Organic Chemistry",
+    "subject": "Chemistry", 
+    "difficulty": "hard",
+    "units": ["Hydrocarbons", "Functional Groups", "Biomolecules", "Polymers"],
+    "videoId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": "chemistry-inorganic",
+    "name": "Inorganic Chemistry",
+    "subject": "Chemistry",
+    "difficulty": "medium", 
+    "units": ["Periodic Table", "Chemical Bonding", "Coordination Compounds"],
+    "videoId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": "biology-cell",
+    "name": "Cell Biology",
+    "subject": "Biology",
+    "difficulty": "easy",
+    "units": ["Cell Structure", "Cell Division", "Biomolecules"],
+    "videoId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": "biology-genetics",
+    "name": "Genetics & Evolution",
+    "subject": "Biology", 
+    "difficulty": "hard",
+    "units": ["Heredity", "DNA & RNA", "Evolution", "Molecular Basis"],
+    "videoId": "dQw4w9WgXcQ"
+  },
+  {
+    "id": "biology-human-physiology",
+    "name": "Human Physiology",
+    "subject": "Biology",
+    "difficulty": "medium",
+    "units": ["Digestive System", "Respiratory System", "Circulatory System", "Nervous System"],
+    "videoId": "dQw4w9WgXcQ"
+  }
+]

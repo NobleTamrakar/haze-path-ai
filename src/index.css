@@ -2,39 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Blue Haze Theme Design System - NEET VR Tutor */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Blue Haze Palette */
+    --blue-haze-50: 248 247 251;
+    --blue-haze-100: 242 240 247;
+    --blue-haze-200: 230 228 240;
+    --blue-haze-300: 201 195 222;
+    --blue-haze-400: 186 177 212;
+    --blue-haze-500: 161 145 193;
+    --blue-haze-600: 141 120 175;
+    --blue-haze-700: 124 101 156;
+    --blue-haze-800: 103 85 130;
+    --blue-haze-900: 86 71 107;
+    --blue-haze-950: 55 45 72;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Core theme tokens */
+    --background: var(--blue-haze-50);
+    --foreground: var(--blue-haze-950);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --card: var(--blue-haze-100);
+    --card-foreground: var(--blue-haze-950);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: var(--blue-haze-100);
+    --popover-foreground: var(--blue-haze-950);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary: var(--blue-haze-700);
+    --primary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: var(--blue-haze-200);
+    --secondary-foreground: var(--blue-haze-950);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: var(--blue-haze-200);
+    --muted-foreground: var(--blue-haze-900);
+
+    --accent: var(--blue-haze-600);
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: var(--blue-haze-300);
+    --input: var(--blue-haze-300);
+    --ring: var(--blue-haze-500);
+
+    /* Custom app tokens */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--blue-haze-500)), hsl(var(--blue-haze-700)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--blue-haze-600)), hsl(var(--blue-haze-800)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(var(--blue-haze-500) / 0.1);
+    --shadow-medium: 0 10px 15px -3px hsl(var(--blue-haze-500) / 0.15);
+    --shadow-large: 0 25px 50px -12px hsl(var(--blue-haze-500) / 0.25);
 
     --radius: 0.5rem;
 

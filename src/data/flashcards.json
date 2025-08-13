@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-1",
+    "topicId": "physics-mechanics",
+    "front": "What is Newton's Second Law?",
+    "back": "F = ma (Force equals mass times acceleration)"
+  },
+  {
+    "id": "fc-2", 
+    "topicId": "physics-mechanics",
+    "front": "Define momentum",
+    "back": "Momentum = mass × velocity (p = mv)"
+  },
+  {
+    "id": "fc-3",
+    "topicId": "chemistry-organic",
+    "front": "What is the functional group of alcohols?",
+    "back": "-OH (hydroxyl group)"
+  },
+  {
+    "id": "fc-4",
+    "topicId": "biology-cell", 
+    "front": "What is the powerhouse of the cell?",
+    "back": "Mitochondria - produces ATP through cellular respiration"
+  },
+  {
+    "id": "fc-5",
+    "topicId": "biology-genetics",
+    "front": "What does DNA stand for?",
+    "back": "Deoxyribonucleic Acid"
+  }
+]
