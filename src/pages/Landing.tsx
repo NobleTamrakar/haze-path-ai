@@ -69,6 +69,7 @@ export default function Landing() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
+              variant="hero"
               size="lg" 
               className="text-lg px-8 py-3"
               onClick={() => navigate('/auth')}
@@ -158,7 +159,7 @@ export default function Landing() {
         </div>
 
         {/* CTA Section */}
-        <Card className="text-center py-12 bg-gradient-to-r from-primary to-accent text-primary-foreground">
+        <Card className="text-center py-12 bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-large">
           <CardContent>
             <h2 className="text-3xl font-bold mb-4">Ready to Ace NEET 2025?</h2>
             <p className="text-lg mb-6 opacity-90">

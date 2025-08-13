@@ -81,10 +81,10 @@ export default function Learn() {
 
   const getSubjectColor = (subject: string) => {
     switch (subject) {
-      case 'Physics': return 'bg-blue-500/10 text-blue-700 border-blue-200';
-      case 'Chemistry': return 'bg-green-500/10 text-green-700 border-green-200';
-      case 'Biology': return 'bg-purple-500/10 text-purple-700 border-purple-200';
-      default: return 'bg-gray-500/10 text-gray-700 border-gray-200';
+      case 'Physics': return 'physics';
+      case 'Chemistry': return 'chemistry';
+      case 'Biology': return 'biology';
+      default: return 'outline';
     }
   };
 
@@ -108,7 +108,7 @@ export default function Learn() {
           </Button>
           
           <div className="flex items-center space-x-3">
-            <Badge className={getSubjectColor(topic.subject)}>
+            <Badge variant={getSubjectColor(topic.subject) as any}>
               {topic.subject}
             </Badge>
             <Badge variant="outline" className="capitalize">

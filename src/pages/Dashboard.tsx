@@ -83,7 +83,7 @@ export default function Dashboard() {
               <Settings className="w-4 h-4 mr-2" />
               Settings
             </Button>
-            <Button onClick={() => navigate('/learn/physics-mechanics')}>
+            <Button variant="hero" onClick={() => navigate('/learn/physics-mechanics')}>
               <PlayCircle className="w-4 h-4 mr-2" />
               Continue Learning
             </Button>
@@ -242,9 +242,9 @@ export default function Dashboard() {
                         <p className="text-sm font-medium">{mistake.concept}</p>
                         <p className="text-xs text-muted-foreground">{mistake.lastQuiz}</p>
                       </div>
-                      <Badge variant="outline" className="text-xs">
-                        {mistake.count} errors
-                      </Badge>
+                <Badge variant="streak" className="text-xs">
+                  {mistake.count} errors
+                </Badge>
                     </div>
                   ))}
                 </div>

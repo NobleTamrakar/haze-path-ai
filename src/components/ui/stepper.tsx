@@ -9,7 +9,7 @@ interface StepperProps {
 
 export function Stepper({ currentStep, totalSteps, className }: StepperProps) {
   return (
-    <div className={cn("w-full px-4 py-6 bg-card rounded-2xl shadow-soft", className)}>
+    <div className={cn("w-full px-6 py-6 bg-card rounded-2xl shadow-medium border border-border", className)}>
       <div className="flex items-center justify-between mb-4">
         <span className="text-sm font-medium text-muted-foreground">
           Step {currentStep} of {totalSteps}

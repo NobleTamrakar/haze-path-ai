@@ -6,118 +6,116 @@
 
 @layer base {
   :root {
-    /* Blue Haze Palette */
-    --blue-haze-50: 248 247 251;
-    --blue-haze-100: 242 240 247;
-    --blue-haze-200: 230 228 240;
-    --blue-haze-300: 201 195 222;
-    --blue-haze-400: 186 177 212;
-    --blue-haze-500: 161 145 193;
-    --blue-haze-600: 141 120 175;
-    --blue-haze-700: 124 101 156;
-    --blue-haze-800: 103 85 130;
-    --blue-haze-900: 86 71 107;
-    --blue-haze-950: 55 45 72;
+    /* Blue Haze Palette - Updated with exact mappings */
+    --blue-haze-50: 270 33% 98%;   /* #F8F7FB - Background */
+    --blue-haze-100: 270 27% 96%;  /* #F2F0F7 - Card BG */
+    --blue-haze-200: 270 25% 91%;  /* #E6E4F0 - Muted BG */
+    --blue-haze-300: 271 25% 81%;  /* #C9C3DE - Border */
+    --blue-haze-400: 271 25% 71%;  /* Interpolated */
+    --blue-haze-500: 271 25% 66%;  /* #A191C1 - Accent */
+    --blue-haze-600: 271 25% 58%;  /* #8D78AF - Success */
+    --blue-haze-700: 271 21% 51%;  /* #7C659C - Primary */
+    --blue-haze-800: 271 21% 43%;  /* #675582 - Primary Hover */
+    --blue-haze-900: 269 21% 35%;  /* #56476B - Text Muted */
+    --blue-haze-950: 266 23% 23%;  /* #372D48 - Text Main */
 
-    /* Core theme tokens */
-    --background: var(--blue-haze-50);
-    --foreground: var(--blue-haze-950);
+    /* Core theme tokens mapped to Blue Haze palette */
+    --background: var(--blue-haze-50);     /* #F8F7FB */
+    --foreground: var(--blue-haze-950);    /* #372D48 */
 
-    --card: var(--blue-haze-100);
+    --card: var(--blue-haze-100);          /* #F2F0F7 */
     --card-foreground: var(--blue-haze-950);
 
     --popover: var(--blue-haze-100);
     --popover-foreground: var(--blue-haze-950);
 
-    --primary: var(--blue-haze-700);
+    --primary: var(--blue-haze-700);       /* #7C659C */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: var(--blue-haze-200);
+    --secondary: var(--blue-haze-200);     /* #E6E4F0 */
     --secondary-foreground: var(--blue-haze-950);
 
-    --muted: var(--blue-haze-200);
-    --muted-foreground: var(--blue-haze-900);
+    --muted: var(--blue-haze-200);         /* #E6E4F0 */
+    --muted-foreground: var(--blue-haze-900); /* #56476B */
 
-    --accent: var(--blue-haze-600);
+    --accent: var(--blue-haze-500);        /* #A191C1 */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 100% 64%;             /* #FF4B4B - Custom Error */
     --destructive-foreground: 0 0% 100%;
 
-    --border: var(--blue-haze-300);
+    --border: var(--blue-haze-300);        /* #C9C3DE */
     --input: var(--blue-haze-300);
-    --ring: var(--blue-haze-500);
+    --ring: var(--blue-haze-500);          /* #A191C1 */
 
-    /* Custom app tokens */
-    --success: 142 76% 36%;
+    /* Custom app tokens with new palette */
+    --success: var(--blue-haze-600);       /* #8D78AF */
     --success-foreground: 0 0% 100%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
+    --warning: 45 100% 67%;                /* #FFC857 - Custom Warning */
+    --warning-foreground: 0 0% 0%;
     
-    /* Gradients */
+    /* Enhanced gradients using new palette */
     --gradient-primary: linear-gradient(135deg, hsl(var(--blue-haze-500)), hsl(var(--blue-haze-700)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--blue-haze-600)), hsl(var(--blue-haze-800)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--blue-haze-700)), hsl(var(--blue-haze-800)));
     
-    /* Shadows */
+    /* Enhanced shadows with primary color */
     --shadow-soft: 0 4px 6px -1px hsl(var(--blue-haze-500) / 0.1);
     --shadow-medium: 0 10px 15px -3px hsl(var(--blue-haze-500) / 0.15);
     --shadow-large: 0 25px 50px -12px hsl(var(--blue-haze-500) / 0.25);
+    --shadow-glow: 0 0 40px hsl(var(--blue-haze-500) / 0.3);
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar tokens using new palette */
+    --sidebar-background: var(--blue-haze-100);
+    --sidebar-foreground: var(--blue-haze-900);
+    --sidebar-primary: var(--blue-haze-700);
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: var(--blue-haze-200);
+    --sidebar-accent-foreground: var(--blue-haze-950);
+    --sidebar-border: var(--blue-haze-300);
+    --sidebar-ring: var(--blue-haze-500);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode with inverted Blue Haze palette */
+    --background: var(--blue-haze-950);
+    --foreground: var(--blue-haze-50);
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: var(--blue-haze-900);
+    --card-foreground: var(--blue-haze-50);
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: var(--blue-haze-900);
+    --popover-foreground: var(--blue-haze-50);
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: var(--blue-haze-500);       /* Lighter primary in dark mode */
+    --primary-foreground: var(--blue-haze-950);
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: var(--blue-haze-800);
+    --secondary-foreground: var(--blue-haze-50);
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: var(--blue-haze-800);
+    --muted-foreground: var(--blue-haze-300);
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: var(--blue-haze-600);
+    --accent-foreground: var(--blue-haze-50);
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 100% 64%;             /* Same error color */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: var(--blue-haze-800);
+    --input: var(--blue-haze-800);
+    --ring: var(--blue-haze-400);
+
+    --sidebar-background: var(--blue-haze-950);
+    --sidebar-foreground: var(--blue-haze-200);
+    --sidebar-primary: var(--blue-haze-500);
+    --sidebar-primary-foreground: var(--blue-haze-950);
+    --sidebar-accent: var(--blue-haze-800);
+    --sidebar-accent-foreground: var(--blue-haze-200);
+    --sidebar-border: var(--blue-haze-800);
+    --sidebar-ring: var(--blue-haze-400);
   }
 }
 
@@ -127,6 +125,50 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom utility classes */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-large {
+    box-shadow: var(--shadow-large);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Animation utilities */
+  .bg-size-200 {
+    background-size: 200% 200%;
+  }
+
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  /* Enhanced focus states */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
   }
 }
